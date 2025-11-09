@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+html, body, #__next { height: 100%; }
+body { @apply bg-midnight text-white; }
+
+.container-page { @apply max-w-screen-md mx-auto px-4 py-6; }
+.card { @apply bg-blueDeep/70 rounded-xl border border-blueSoft/50 shadow-md; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 font-medium transition; }
+.btn-primary { @apply bg-gold text-black hover:bg-goldSoft; }
+.btn-secondary { @apply bg-blueSoft hover:bg-blueSoft/80; }
+.input { @apply bg-blueDeep/60 border border-blueSoft/60 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gold; }
+.label { @apply text-sm text-gray-300; }
+
+.progress-ring { transform: rotate(-90deg); }
